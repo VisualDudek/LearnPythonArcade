@@ -70,6 +70,14 @@ class MyGame(arcade.Window):
             wall.position = coordinate
             self.wall_list.append(wall)
 
+        # User Custom Sprite
+        coordinate = [512, 460]
+        image_source = ":resources:images/items/gemBlue.png"
+        gem = arcade.Sprite(image_source, TILE_SCALING)
+        gem.position = coordinate
+        self.wall_list.append(gem)
+        
+
     def on_draw(self):
         """Render the screen."""
 
